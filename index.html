@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shans Mohammed | Full-Stack Developer & BCA Student</title>
+  <meta name="description" content="Portfolio of Shans Mohammed - BCA Full-Stack Student at Jain University Kochi. Skilled in Python, C++, SQL, HTML/JS, GitHub, and Vercel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body class="theme-green">
+  <!-- CRT Scanline & Vignette Overlay -->
+  <div class="crt-overlay"></div>
+  <div class="scanlines"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <span class="terminal-symbol">&gt;</span>
+      <span class="glitch-text" data-text="SHANS.EXE">SHANS.EXE</span>
+      <span class="status-dot"></span>
+    </div>
+    <nav class="nav-links">
+      <a href="#terminal-section" class="nav-link active">Console</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#athletics" class="nav-link">Sports</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-controls">
+      <button id="sound-toggle" class="control-btn" title="Toggle Terminal Audio" aria-label="Toggle Sound">
+        <span class="sound-icon">🔊</span>
+      </button>
+      <div class="theme-picker">
+        <button class="theme-btn green active" data-theme="theme-green" title="Phosphor Green"></button>
+        <button class="theme-btn cyan" data-theme="theme-cyan" title="Cyber Cyan"></button>
+        <button class="theme-btn amber" data-theme="theme-amber" title="Amber CRT"></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Animated Terminal Screen -->
+  <main class="main-container">
+    <section class="hero-section" id="hero">
+      <div class="hero-header">
+        <div class="badge-row">
+          <span class="pill-badge campus-badge">📍 Jain University, Kochi</span>
+          <span class="pill-badge track-badge">🎓 BCA Full-Stack</span>
+          <span class="pill-badge vercel-badge">▲ Vercel Ready</span>
+        </div>
+        <h1 class="hero-title">Shans Mohammed</h1>
+        <p class="hero-subtitle">
+          Code Architect • Full-Stack Engineer in training • Athlete
+        </p>
+      </div>
+
+      <!-- CRT Monitor Display Frame -->
+      <div class="crt-monitor-wrapper">
+        <div class="crt-monitor-bezel">
+          <div class="bezel-top">
+            <span class="bezel-brand">NEO-SYS CRT // MODEL 2026</span>
+            <div class="bezel-status">
+              <span class="led-light active"></span>
+              <span class="led-label">ONLINE</span>
+            </div>
+          </div>
+
+          <div class="crt-screen-container">
+            <img id="terminal-gif-display" src="assets/cracked_terminal.gif" alt="Cracked Terminal Screen Loading" class="crt-gif-screen">
+            <div class="crt-glass-glare"></div>
+          </div>
+
+          <!-- GIF Switcher Toolbar -->
+          <div class="gif-controls-bar">
+            <span class="ctrl-label">SCREEN STATE:</span>
+            <button class="screen-switch-btn active" data-src="assets/cracked_terminal.gif">⚡ Cracked CRT</button>
+            <button class="screen-switch-btn" data-src="assets/shans_terminal.gif">💻 Clean Terminal</button>
+            <button class="screen-switch-btn" data-src="assets/basketball_terminal.gif">🏀 Impact Impact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Console Section -->
+    <section class="terminal-section" id="terminal-section">
+      <div class="section-title-wrap">
+        <span class="tag">&lt;interactive-shell /&gt;</span>
+        <h2>System Terminal Interface</h2>
+        <p class="section-desc">Type commands or click quick action pills below to query system data.</p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-titlebar">
+          <div class="window-controls">
+            <span class="win-btn win-close"></span>
+            <span class="win-btn win-minimize"></span>
+            <span class="win-btn win-maximize"></span>
+          </div>
+          <div class="window-title">shans@jain-university: ~ (zsh)</div>
+          <div class="window-meta">BCA_FULLSTACK // v2.6</div>
+        </div>
+
+        <div class="quick-commands">
+          <span class="quick-label">QUICK CMDS:</span>
+          <button class="cmd-pill" data-cmd="whoami">whoami</button>
+          <button class="cmd-pill" data-cmd="skills">skills</button>
+          <button class="cmd-pill" data-cmd="education">education</button>
+          <button class="cmd-pill" data-cmd="projects">projects</button>
+          <button class="cmd-pill" data-cmd="sports">sports</button>
+          <button class="cmd-pill" data-cmd="contact">contact</button>
+          <button class="cmd-pill" data-cmd="help">help</button>
+          <button class="cmd-pill" data-cmd="clear">clear</button>
+        </div>
+
+        <div class="terminal-body" id="terminal-output">
+          <div class="term-line output-line system-welcome">
+            <span class="highlight-cyan">[SYSTEM READY]</span> Initialized environment for <span class="highlight-green">Shans Mohammed</span>.
+          </div>
+          <div class="term-line output-line system-welcome">
+            Type <span class="cmd-highlight">help</span> to list available commands, or click any chip above.
+          </div>
+        </div>
+
+        <div class="terminal-input-row">
+          <span class="prompt-symbol">shans@jain-kochi:~$</span>
+          <input type="text" id="terminal-input" placeholder="Type a command (e.g. skills, projects)..." autocomplete="off" spellcheck="false" autofocus>
+          <button id="send-cmd-btn" class="terminal-send-btn">RUN ↵</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tech Stack Section -->
+    <section class="content-section" id="skills">
+      <div class="section-title-wrap">
+        <span class="tag">&lt;tech-matrix /&gt;</span>
+        <h2>Technical Core & Capabilities</h2>
+        <p class="section-desc">Languages, tooling, database architecture, and deployment pipelines.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Python -->
+        <div class="skill-card">
+          <div class="skill-icon-header">
+            <span class="tech-icon python-icon">🐍</span>
+            <span class="tech-name">Python</span>
+            <span class="tech-tag">Logic & Scripts</span>
+          </div>
+          <p class="skill-desc">Backend development, automation scripts, data parsing, and algorithmic problem solving.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+          <div class="skill-features">
+            <span>Automation</span><span>Data Structures</span><span>OOP</span>
+          </div>
+        </div>
+
+        <!-- C++ -->
+        <div class="skill-card">
+          <div class="skill-icon-header">
+            <span class="tech-icon cpp-icon">⚙️</span>
+            <span class="tech-name">C++</span>
+            <span class="tech-tag">Performance</span>
+          </div>
+          <p class="skill-desc">Strong grasp of low-level memory concepts, pointers, OOP paradigms, and standard library (STL).</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+          <div class="skill-features">
+            <span>Algorithms</span><span>Memory Mgmt</span><span>STL</span>
+          </div>
+        </div>
+
+        <!-- SQL -->
+        <div class="skill-card">
+          <div class="skill-icon-header">
+            <span class="tech-icon sql-icon">🗄️</span>
+            <span class="tech-name">SQL</span>
+            <span class="tech-tag">Databases</span>
+          </div>
+          <p class="skill-desc">Relational database design, query optimization, joins, indexing, normalization, and transactions.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 86%;"></div></div>
+          <div class="skill-features">
+            <span>Schema Design</span><span>Complex Joins</span><span>Indexes</span>
+          </div>
+        </div>
+
+        <!-- JavaScript & HTML5/CSS3 -->
+        <div class="skill-card">
+          <div class="skill-icon-header">
+            <span class="tech-icon js-icon">🌐</span>
+            <span class="tech-name">JS & HTML/CSS</span>
+            <span class="tech-tag">Frontend Full-Stack</span>
+          </div>
+          <p class="skill-desc">Modern ES6+ JavaScript, responsive layouts, DOM manipulation, asynchronous APIs, and animations.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+          <div class="skill-features">
+            <span>DOM / ES6</span><span>Flex/Grid UI</span><span>Async / Fetch</span>
+          </div>
+        </div>
+
+        <!-- GitHub & Git -->
+        <div class="skill-card">
+          <div class="skill-icon-header">
+            <span class="tech-icon git-icon">🐙</span>
+            <span class="tech-name">Git & GitHub</span>
+            <span class="tech-tag">Version Control</span>
+          </div>
+          <p class="skill-desc">Branching workflows, pull requests, collaboration, code reviews, and project management.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+          <div class="skill-features">
+            <span>Branching</span><span>PR Workflow</span><span>Merge & Rebase</span>
+          </div>
+        </div>
+
+        <!-- Vercel -->
+        <div class="skill-card">
+          <div class="skill-icon-header">
+            <span class="tech-icon vercel-icon">▲</span>
+            <span class="tech-name">Vercel</span>
+            <span class="tech-tag">Cloud & Deploy</span>
+          </div>
+          <p class="skill-desc">Instant production deployments, edge configurations, serverless integrations, and live domain mapping.</p>
+          <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+          <div class="skill-features">
+            <span>Zero-Config</span><span>CI/CD</span><span>Fast CDN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="content-section" id="education">
+      <div class="section-title-wrap">
+        <span class="tag">&lt;academic-trajectory /&gt;</span>
+        <h2>Education & Campus Life</h2>
+        <p class="section-desc">Higher education and hands-on computer science foundation.</p>
+      </div>
+
+      <div class="education-card">
+        <div class="edu-badge-icon">🏛️</div>
+        <div class="edu-details">
+          <div class="edu-meta-row">
+            <span class="edu-status-pill">Currently Enrolled</span>
+            <span class="edu-year">2024 - Present</span>
+          </div>
+          <h3 class="edu-degree">Bachelor of Computer Applications (BCA) - Full-Stack</h3>
+          <h4 class="edu-institution">Jain (Deemed-to-be University), Kochi Campus 🌴</h4>
+          <p class="edu-location">Kochi, Kerala, India (Near Infopark Tech Hub)</p>
+          <p class="edu-summary">
+            Specializing in Full-Stack Web Development, Data Structures, Modern Object-Oriented Programming, and Relational Database Systems. Actively engaged in collaborative campus hackathons and student tech communities.
+          </p>
+          <div class="coursework-chips">
+            <span class="chip">Data Structures & Algorithms</span>
+            <span class="chip">Web Technologies (HTML/CSS/JS)</span>
+            <span class="chip">Database Management Systems (SQL)</span>
+            <span class="chip">C++ Programming</span>
+            <span class="chip">Python Scripting</span>
+            <span class="chip">Software Engineering Principles</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports & Athletic Discipline Section -->
+    <section class="content-section" id="athletics">
+      <div class="section-title-wrap">
+        <span class="tag">&lt;athletic-performance /&gt;</span>
+        <h2>Physical Discipline & Team Sports</h2>
+        <p class="section-desc">Balancing hours behind the keyboard with high-intensity court and field sports.</p>
+      </div>
+
+      <div class="sports-grid">
+        <div class="sport-card">
+          <div class="sport-icon">🏀</div>
+          <h3>Basketball</h3>
+          <p class="sport-role">Fast-break Pace & Court Vision</p>
+          <p class="sport-desc">Quick situational decision making, explosive footwork, and spatial positioning. Drives perseverance under game pressure.</p>
+          <div class="sport-metric">
+            <div class="metric-label"><span>Focus & Reflexes</span><span>95%</span></div>
+            <div class="metric-bar"><div class="metric-fill" style="width: 95%;"></div></div>
+          </div>
+        </div>
+
+        <div class="sport-card">
+          <div class="sport-icon">⚽</div>
+          <h3>Football</h3>
+          <p class="sport-role">Stamina & Team Chemistry</p>
+          <p class="sport-desc">Unrelenting cardiovascular endurance, field strategy, unselfish teamwork, and relentless defense-to-attack transition.</p>
+          <div class="sport-metric">
+            <div class="metric-label"><span>Endurance & Teamplay</span><span>92%</span></div>
+            <div class="metric-bar"><div class="metric-fill" style="width: 92%;"></div></div>
+          </div>
+        </div>
+
+        <div class="sport-card">
+          <div class="sport-icon">🏐</div>
+          <h3>Volleyball</h3>
+          <p class="sport-role">Vertical Agility & Net Control</p>
+          <p class="sport-desc">High vertical timing, rapid communication between players, and clutch execution on spikes and digs.</p>
+          <div class="sport-metric">
+            <div class="metric-label"><span>Agility & Communication</span><span>90%</span></div>
+            <div class="metric-bar"><div class="metric-fill" style="width: 90%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="content-section" id="projects">
+      <div class="section-title-wrap">
+        <span class="tag">&lt;code-deployments /&gt;</span>
+        <h2>Featured Projects</h2>
+        <p class="section-desc">Practical builds across frontend interfaces, database models, and backend logic.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="folder-icon">📂</div>
+            <div class="project-links">
+              <a href="https://github.com/shansmohammed" class="icon-link" title="GitHub Source" target="_blank" rel="noopener">🐙</a>
+              <a href="#" class="icon-link" title="Live Preview">🔗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Cyber CRT Portfolio & Interactive Shell</h3>
+          <p class="project-desc">A retro terminal interface with sound synthesis, scanlines effect, and interactive command execution built for deployment on Vercel.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Vercel</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="folder-icon">⚙️</div>
+            <div class="project-links">
+              <a href="https://github.com/shansmohammed" class="icon-link" title="GitHub Source" target="_blank" rel="noopener">🐙</a>
+            </div>
+          </div>
+          <h3 class="project-title">C++ High Performance DSA Toolkit</h3>
+          <p class="project-desc">A custom implementation of standard data structures, search/sort algorithms, and optimized memory management utilities in modern C++.</p>
+          <div class="project-tags">
+            <span>C++</span><span>Algorithms</span><span>Data Structures</span><span>OOP</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="folder-icon">🐍</div>
+            <div class="project-links">
+              <a href="https://github.com/shansmohammed" class="icon-link" title="GitHub Source" target="_blank" rel="noopener">🐙</a>
+            </div>
+          </div>
+          <h3 class="project-title">Python Automation & SQL Pipeline</h3>
+          <p class="project-desc">Data ingestion engine that processes records, validates relational schemas, and syncs tables with SQL queries.</p>
+          <div class="project-tags">
+            <span>Python</span><span>SQL</span><span>Automation</span><span>ETL</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="folder-icon">🗄️</div>
+            <div class="project-links">
+              <a href="https://github.com/shansmohammed" class="icon-link" title="GitHub Source" target="_blank" rel="noopener">🐙</a>
+            </div>
+          </div>
+          <h3 class="project-title">Jain University Student Portal DB</h3>
+          <p class="project-desc">Relational database schema modeling student enrollments, course tracking, and athletic participation with normalized 3NF architecture.</p>
+          <div class="project-tags">
+            <span>SQL</span><span>Relational DB</span><span>Normalization</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section class="content-section" id="contact">
+      <div class="section-title-wrap">
+        <span class="tag">&lt;initiate-handshake /&gt;</span>
+        <h2>Let's Connect</h2>
+        <p class="section-desc">Open for collaborations, startup projects, and technical discussions.</p>
+      </div>
+
+      <div class="contact-box">
+        <div class="contact-info">
+          <h3>Get In Touch with Shans</h3>
+          <p>Whether you're looking to build the next big thing, recruit for full-stack roles, or connect on the court, my terminal is always open.</p>
+
+          <div class="contact-methods">
+            <div class="contact-item">
+              <span class="method-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <p>Kochi, Kerala, India (Jain University Campus)</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="method-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p id="email-address">shansmohammed@example.com</p>
+              </div>
+              <button id="copy-email-btn" class="copy-btn">Copy</button>
+            </div>
+            <div class="contact-item">
+              <span class="method-icon">▲</span>
+              <div>
+                <strong>Hosting</strong>
+                <p>Deployed seamlessly via Vercel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-action-card">
+          <h4>Quick Terminal Connect</h4>
+          <p>Send a message directly through the terminal shell:</p>
+          <div class="quick-terminal-cmd">
+            <code>shans@jain:~$ ping -c 3 shansmohammed</code>
+          </div>
+          <div class="social-button-row">
+            <a href="https://github.com/shansmohammed" class="social-btn github-btn" target="_blank" rel="noopener">
+              <span>🐙 GitHub Profile</span>
+            </a>
+            <a href="https://linkedin.com" class="social-btn linkedin-btn" target="_blank" rel="noopener">
+              <span>💼 LinkedIn</span>
+            </a>
+            <a href="mailto:shansmohammed@example.com" class="social-btn email-btn">
+              <span>✉️ Send Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-left">
+        <code>&copy; 2026 Shans Mohammed • BCA Full-Stack, Jain University Kochi</code>
+      </p>
+      <p class="footer-right">
+        <code>Built with Python, C++, SQL, JS & Hosted on Vercel ▲</code>
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
