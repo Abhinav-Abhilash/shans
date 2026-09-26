@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     contact: `
 <span class="highlight-green">=== INITIATE HANDSHAKE ===</span>
-  • <span class="highlight-cyan">GitHub:</span>   <a href="https://github.com/shansmohammed" target="_blank" style="color:var(--accent);">github.com/shansmohammed</a>
+  • <span class="highlight-cyan">GitHub:</span>   <a href="https://github.com/Abhinav-Abhilash/shans" target="_blank" style="color:var(--accent);">github.com/Abhinav-Abhilash/shans</a>
   • <span class="highlight-cyan">LinkedIn:</span> <a href="https://linkedin.com" target="_blank" style="color:var(--accent);">linkedin.com/in/shansmohammed</a>
   • <span class="highlight-cyan">Email:</span>    shansmohammed@example.com
   • <span class="highlight-cyan">Campus:</span>   Jain University, Kochi, Kerala, India
