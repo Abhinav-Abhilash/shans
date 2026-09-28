@@ -263,14 +263,24 @@ body {
 }
 
 .pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 500;
-  padding: 0.3rem 0.9rem;
+  padding: 0.35rem 0.95rem;
   border-radius: 20px;
   border: 1px solid var(--border-color);
   background: var(--bg-card);
   color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.pill-badge svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
 
 .campus-badge {
@@ -408,15 +418,24 @@ body {
 }
 
 .screen-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-muted);
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  padding: 0.4rem 0.8rem;
+  padding: 0.4rem 0.85rem;
   border-radius: 6px;
   cursor: pointer;
   transition: var(--transition);
+}
+
+.screen-switch-btn svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
 }
 
 .screen-switch-btn:hover, .screen-switch-btn.active {
@@ -652,7 +671,32 @@ body {
 }
 
 .tech-icon {
-  font-size: 1.75rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.tech-icon svg {
+  width: 24px;
+  height: 24px;
+  transition: var(--transition);
+}
+
+.skill-card:hover .tech-icon {
+  border-color: var(--accent);
+  box-shadow: 0 0 16px var(--accent-glow);
+  background: rgba(0, 255, 102, 0.08);
+}
+
+.skill-card:hover .tech-icon svg {
+  transform: scale(1.1);
 }
 
 .tech-name {
@@ -730,7 +774,6 @@ body {
 }
 
 .edu-badge-icon {
-  font-size: 3rem;
   background: rgba(0, 255, 102, 0.08);
   border: 1px solid var(--border-color);
   width: 80px;
@@ -740,6 +783,24 @@ body {
   justify-content: center;
   border-radius: 12px;
   flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.edu-badge-icon svg {
+  width: 42px;
+  height: 42px;
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+.education-card:hover .edu-badge-icon {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+  background: rgba(0, 255, 102, 0.14);
+}
+
+.education-card:hover .edu-badge-icon svg {
+  transform: scale(1.08);
 }
 
 .edu-details {
@@ -835,8 +896,29 @@ body {
 }
 
 .sport-icon {
-  font-size: 2.25rem;
-  margin-bottom: 0.5rem;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 87, 34, 0.08);
+  border: 1px solid rgba(255, 87, 34, 0.25);
+  color: #ff5722;
+  margin-bottom: 0.85rem;
+  transition: var(--transition);
+}
+
+.sport-icon svg {
+  width: 28px;
+  height: 28px;
+  transition: var(--transition);
+}
+
+.sport-card:hover .sport-icon {
+  background: rgba(255, 87, 34, 0.18);
+  box-shadow: 0 0 20px rgba(255, 87, 34, 0.4);
+  transform: scale(1.08);
 }
 
 .sport-card h3 {
@@ -915,7 +997,28 @@ body {
 }
 
 .folder-icon {
-  font-size: 1.85rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  color: var(--highlight-cyan);
+  transition: var(--transition);
+}
+
+.folder-icon svg {
+  width: 22px;
+  height: 22px;
+  transition: var(--transition);
+}
+
+.project-card:hover .folder-icon {
+  background: rgba(0, 240, 255, 0.18);
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.4);
+  transform: translateY(-2px);
 }
 
 .project-links {
@@ -924,15 +1027,31 @@ body {
 }
 
 .icon-link {
-  font-size: 1.25rem;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-dim);
   text-decoration: none;
-  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.icon-link svg {
+  width: 17px;
+  height: 17px;
   transition: var(--transition);
 }
 
 .icon-link:hover {
-  opacity: 1;
-  transform: scale(1.15);
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+  box-shadow: 0 0 14px var(--accent);
+  transform: translateY(-2px);
 }
 
 .project-title {
@@ -1001,7 +1120,28 @@ body {
 }
 
 .method-icon {
-  font-size: 1.5rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--accent);
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.method-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-item:hover .method-icon {
+  border-color: var(--accent);
+  box-shadow: 0 0 14px var(--accent-glow);
+  background: rgba(0, 255, 102, 0.08);
 }
 
 .contact-item strong {
@@ -1076,16 +1216,23 @@ body {
 }
 
 .social-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.65rem;
   text-decoration: none;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  padding: 0.75rem 1rem;
-  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
   transition: var(--transition);
+}
+
+.social-btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .github-btn {
