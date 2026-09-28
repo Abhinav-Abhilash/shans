@@ -3,7 +3,7 @@
 <div align="center">
 
   <!-- Hero Terminal Animation -->
-  <a href="https://github.com/Abhinav-Abhilash/shans">
+  <a href="https://github.com/shansmohammedtharuvara-ship-it">
     <img src="./assets/cracked_terminal.gif" alt="Shans Mohammed Terminal Loading" width="720" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 255, 102, 0.2);" />
   </a>
 
@@ -22,8 +22,8 @@
 
   <p>
     <a href="https://vercel.com"><img src="https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/></a>
-    <a href="https://github.com/Abhinav-Abhilash/shans"><img src="https://img.shields.io/badge/Hosted_on-GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
-    <a href="mailto:shansmohammed@example.com"><img src="https://img.shields.io/badge/Email-shans@connect.me-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+    <a href="https://github.com/shansmohammedtharuvara-ship-it"><img src="https://img.shields.io/badge/Hosted_on-GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
+    <a href="mailto:shansmohammedtharuvara@gmail.com"><img src="https://img.shields.io/badge/Email-shansmohammedtharuvara@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
   </p>
 
 </div>
@@ -139,15 +139,15 @@ In addition to writing code, physical discipline and team sports are central to 
 
 <div align="center">
 
-  <a href="https://github.com/Abhinav-Abhilash/shans">
-    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  <a href="https://github.com/shansmohammedtharuvara-ship-it">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
   &nbsp;
-  <a href="https://linkedin.com">
+  <a href="https://www.linkedin.com/in/shans-mohammed-tharuvara-617b2539a?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   &nbsp;
-  <a href="mailto:shansmohammed@example.com">
+  <a href="mailto:shansmohammedtharuvara@gmail.com">
     <img src="https://img.shields.io/badge/Email-Get_in_Touch-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
   &nbsp;

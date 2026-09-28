@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <span class="highlight-green">sports</span>       - Athletic track record & physical discipline
   <span class="highlight-green">projects</span>     - Showcase of featured software deployments
   <span class="highlight-green">contact</span>      - Communication channels & social links
+  <span class="highlight-green">ping</span>         - Ping test to Shans's network terminal
   <span class="highlight-green">screen</span>       - Toggle between CRT gifs (cracked, clean, ball)
   <span class="highlight-green">theme</span>        - Change color scheme (green, cyan, amber)
   <span class="highlight-green">date</span>         - Print current system timestamp
@@ -177,10 +178,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     contact: `
 <span class="highlight-green">=== INITIATE HANDSHAKE ===</span>
-  • <span class="highlight-cyan">GitHub:</span>   <a href="https://github.com/Abhinav-Abhilash/shans" target="_blank" style="color:var(--accent);">github.com/Abhinav-Abhilash/shans</a>
-  • <span class="highlight-cyan">LinkedIn:</span> <a href="https://linkedin.com" target="_blank" style="color:var(--accent);">linkedin.com/in/shansmohammed</a>
-  • <span class="highlight-cyan">Email:</span>    shansmohammed@example.com
+  • <span class="highlight-cyan">GitHub:</span>   <a href="https://github.com/shansmohammedtharuvara-ship-it" target="_blank" style="color:var(--accent);">github.com/shansmohammedtharuvara-ship-it</a>
+  • <span class="highlight-cyan">LinkedIn:</span> <a href="https://www.linkedin.com/in/shans-mohammed-tharuvara-617b2539a?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" style="color:var(--accent);">linkedin.com/in/shans-mohammed-tharuvara</a>
+  • <span class="highlight-cyan">Email:</span>    <a href="mailto:shansmohammedtharuvara@gmail.com" style="color:var(--accent);">shansmohammedtharuvara@gmail.com</a>
   • <span class="highlight-cyan">Campus:</span>   Jain University, Kochi, Kerala, India
+`,
+
+    ping: `
+<span class="highlight-green">PING shansmohammed (127.0.0.1): 56 data bytes</span>
+64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.038 ms
+64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.042 ms
+64 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.039 ms
+
+<span class="highlight-cyan">--- shansmohammed ping statistics ---</span>
+3 packets transmitted, 3 packets received, <span class="highlight-green">0.0% packet loss</span>
+Status: <span class="highlight-green">Online & Ready to Connect!</span>
 `,
 
     date: () => `<span class="highlight-cyan">${new Date().toString()}</span>`,
